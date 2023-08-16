@@ -1,0 +1,14 @@
+<div class="dropdown" (mouseenter)="state = 0" (mouseleave)="state = 1">
+  <button id="dropdown-btn" type="button" class="dropdownbtn" (click)="showMenu = !showMenu">
+    <div id="displayText">
+      {{ selectedItem && selectedItem.DisplayValue || 'Select on option' }}
+    </div>
+    <i class="icon fa" [class.fa-angle-down]="!showMenu" [class.fa-angle-up]="showMenu"></i>
+  </button>
+  <div id="dropdown" class="dropdown-content" [class.show]="showMenu">
+    <a *ngFor="let item of data" (click)="valueChange(item)" [class.selected]="item === selectedItem"
+      [class.selectedIteam]="item === selectedItem">
+      {{ item.DisplayValue }}
+    </a>
+  </div>
+</div>

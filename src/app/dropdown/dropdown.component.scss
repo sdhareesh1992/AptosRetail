@@ -1,0 +1,123 @@
+$color464a4c: #464a4c;
+$bgColorFFF: #fff;
+$bgColorEFF6FF: #EFF6FF;
+$bgColore9ecef: #e9ecef;
+$color1D4ED8: #1D4ED8;
+$border: 1px solid rgba(0, 0, 0, 0.15);
+$colorGray: gray;
+$size16px: 1rem;
+$fontWeight400: 400;
+$size5px: 0.5rem;
+$disBlock: block;
+$size10px: 0.625rem;
+$nopx: 0;
+$disPlyNone: none;
+$positioAbs: absolute;
+
+.dropdownbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bgColorFFF;
+  color: $color464a4c;
+  padding: $size5px;
+  font-size: $size16px;
+  border: $border;
+  border-radius: $size5px;
+  cursor: pointer;
+}
+
+.dropdown i.icon {
+  color: $color464a4c;
+  font-size: 1.5em;
+}
+
+.dropdownbtn:hover,
+.dropdownbtn:focus {
+  background-color: inherit;
+}
+
+.dropdown {
+  position: relative;
+  display: $disBlock;
+  margin: auto;
+  width: 50%;
+}
+
+.dropdown #dropdown-btn {
+  width: 100% !important;
+}
+
+.dropdown-content {
+  border: $border;
+  display: $disPlyNone;
+  position: $positioAbs;
+  background-color: $bgColorFFF;
+  min-width: 100%;
+  box-shadow: $nopx 0.5rem $size16px $nopx rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  height: auto;
+  max-height: 18.75rem;
+  overflow: auto;
+}
+
+.dropdown-content a {
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: $color464a4c;
+  padding: 0.75rem $size16px;
+  text-decoration: $disPlyNone;
+  display: $disBlock;
+}
+
+.dropdown-content a:hover {
+  background: $bgColorEFF6FF;
+}
+
+.show {
+  display: $disBlock;
+  margin-top: $size10px;
+  border-radius: $size5px;
+}
+
+.custom-dropdown {
+  .dropdown-content {
+    a.selectedIteam {
+      font-size: $size16px;
+      font-weight: $fontWeight400;
+      white-space: nowrap;
+      color: $color1D4ED8 !important;
+    }
+  }
+}
+
+.selectedIteam {
+  background: $bgColore9ecef;
+  font-size: $size16px;
+  font-weight: $fontWeight400;
+  white-space: nowrap;
+  color: $color1D4ED8 !important;
+}
+
+::-webkit-scrollbar {
+  width: $size5px;
+  position: $positioAbs;
+  right: $size10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 $size5px $colorGray;
+  border-radius: $size10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $colorGray;
+  border-radius: $size10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $colorGray;
+}
