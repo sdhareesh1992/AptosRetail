@@ -109,17 +109,17 @@ $positioAbs: absolute;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px $colorGray;
+  box-shadow: inset 0 0 2px #f0f2f5;
   border-radius: $size8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $colorGray;
+  background:  #4d607b;
   border-radius: $size8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: $colorGray;
+  background:  #4d607b;
 }
 #displayText {
   opacity: 0.5;
