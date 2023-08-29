@@ -11,7 +11,7 @@ export class AppComponent {
 
   dropdownData: Array<IDropdownItem> = new Array<IDropdownItem>();
 
-  constructor() { }
+  constructor() {}
 
   model = new FormGroup({
     droupDown: new FormControl(),
@@ -26,8 +26,8 @@ export class AppComponent {
       { DisplayValue: 'Option 5', Value: 5 },
       { DisplayValue: 'Option 6', Value: 6 },
       { DisplayValue: 'Option 7', Value: 7 },
-      // { DisplayValue: 'Option 8', Value: 8 },
+      { DisplayValue: 'Option 8', Value: 8 },
       // { DisplayValue: 'Option 9', Value: 9 },
-    ];
+  ];
   }
 }
